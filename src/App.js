@@ -46,6 +46,8 @@ function Board() {
 }
 
 export default function Game(params) {
+  const [xIsNext, setXIsNext] = useState(true);
+  const [history, setHistory] = useState([Array(9).fill(null)]);
   return (
     <div>
       <div className="game-board">
